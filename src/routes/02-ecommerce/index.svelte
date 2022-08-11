@@ -13,7 +13,7 @@
   const images = import.meta.glob("$lib/assets/02/images/*.png");
 
   // The keys of the images object are the urls to the images
-  console.log(Object.keys(images));
+  console.log(images, Object.keys(images));
 
   function getImage(imageName) {
     // Lets create an array of the image urls using Object.keys

@@ -1,10 +1,14 @@
-<div class="h-screen bg-emerald-400">
-  <h1 class="my-12 text-violet-100 text-8xl title text-center">Marimba</h1>
+<script>
+  export let jiggle;
+</script>
 
+<div class="h-screen bg-violet-400">
+  <h1 class="my-12 text-violet-100 text-8xl title text-center">Marimba</h1>
   <ul class="flex space-x-4 px-32 w-full justify-center items-center ">
     <li
       data-sound="do"
       id="do-key"
+      class:jiggle={jiggle === 0}
       class="rounded-lg h-96 w-1/12 bg-orange-900 hover:bg-orange-800 active:bg-orange-900"
     />
     <li
@@ -44,52 +48,3 @@
     />
   </ul>
 </div>
-
-<style>
-  @import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap");
-
-  .title {
-    font-family: "DynaPuff", cursive;
-  }
-
-  .jiggle {
-    animation: jiggle 0.1s;
-    animation-iteration-count: infinite;
-  }
-
-  @keyframes jiggle {
-    0% {
-      transform: translate(1px, 1px) rotate(0deg);
-    }
-    10% {
-      transform: translate(-1px, -2px) rotate(-1deg);
-    }
-    20% {
-      transform: translate(-3px, 0px) rotate(1deg);
-    }
-    30% {
-      transform: translate(3px, 2px) rotate(0deg);
-    }
-    40% {
-      transform: translate(1px, -1px) rotate(1deg);
-    }
-    50% {
-      transform: translate(-1px, 2px) rotate(-1deg);
-    }
-    60% {
-      transform: translate(-3px, 1px) rotate(0deg);
-    }
-    70% {
-      transform: translate(3px, 1px) rotate(-1deg);
-    }
-    80% {
-      transform: translate(-1px, -1px) rotate(1deg);
-    }
-    90% {
-      transform: translate(1px, 2px) rotate(0deg);
-    }
-    100% {
-      transform: translate(1px, -2px) rotate(-1deg);
-    }
-  }
-</style>

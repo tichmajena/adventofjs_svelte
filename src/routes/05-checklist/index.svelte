@@ -1,8 +1,9 @@
 <script>
   import podcast_cover from "$lib/assets/05/images/podcast-cover.png";
+  import { element } from "svelte/internal";
   export let episodes;
 
-  console.log(episodes);
+  //console.log(episodes);
 </script>
 
 <section>

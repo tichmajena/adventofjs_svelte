@@ -3,6 +3,7 @@ node_modules
 /build
 /.svelte-kit
 /package
+/src/lib/assets/09/images
 .env
 .env.*
 !.env.example

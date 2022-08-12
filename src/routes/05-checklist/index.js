@@ -3,22 +3,27 @@ export const GET = async () => {
     {
       id: 1,
       name: "James Q Quick's Origin Story",
+      author: "John",
     },
     {
       id: 2,
       name: "Amy Dutton's Origin Story",
+      author: "Peter",
     },
     {
       id: 3,
       name: "The Tech Behind Compressed.fm",
+      author: "Peter",
     },
     {
       id: 4,
       name: "Starting a New Development Project",
+      author: "John",
     },
     {
       id: 5,
       name: "How Do you Start a New Design Project?",
+      author: "John",
     },
     {
       id: 6,
